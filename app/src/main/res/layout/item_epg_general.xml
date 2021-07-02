@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/clContainer"
+    android:layout_width="match_parent"
+    android:layout_height="150dp">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/tvLive"
+        app:layout_constraintStart_toEndOf="@id/tvLive"
+        app:layout_constraintTop_toTopOf="@id/tvLive" />
+
+    <TextView
+        android:id="@+id/tvChannel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Kenh 00"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvLive" />
+
+    <TextView
+        android:id="@+id/tvLive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/holo_red_light"
+        android:drawablePadding="6dp"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="4dp"
+        android:text="@string/live"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:drawableEndCompat="@drawable/circle_dot"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvLiveTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Thoi su buoi sang"
+        android:textColor="#4cffff"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@id/tvLive"
+        app:layout_constraintTop_toBottomOf="@id/tvLive" />
+
+    <TextView
+        android:id="@+id/tvLiveTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="06:00 - 07:00"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/tvLive"
+        app:layout_constraintTop_toBottomOf="@id/tvLiveTitle" />
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:text="1"
+        android:textSize="50sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tvOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/open"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@id/btnPlay"
+        app:layout_constraintStart_toStartOf="@id/btnPlay"
+        app:layout_constraintTop_toBottomOf="@id/btnPlay" />
+
+    <TextView
+        android:id="@+id/tvSecondNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="8dp"
+        android:text="TIẾP THEO  9:00  Sức khoẻ - công việc"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tvLiveTitle" />
+
+    <TextView
+        android:id="@+id/tvFirstNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TIẾP THEO  9:00  Sức khoẻ - công việc"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@id/tvSecondNext"
+        app:layout_constraintStart_toStartOf="@id/tvLiveTitle" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnPlay"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/circle_dot"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvLiveTitle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
